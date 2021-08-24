@@ -7,8 +7,10 @@
     <title>Infinity Podcasts</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.6/mediaelementplayer.css">  
+    <link rel="stylesheet" href="./css/audio.css">            
 </head>
-<body>
+<body >
    <div class="sidebar">
        <h1 id="logo">Infinity Podcasts</h1>
        <div class="categories">
@@ -27,18 +29,38 @@
            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
            <li><a href="#"><i class="fab fa-telegram"></i></a></li>
            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+           <button onclick="
+            let audio = document.querySelector('audio');
+            if(audio.paused){
+                audio.play()
+            }else{
+                audio.pause()
+            }
+          
+            
+           ">Click</button>
+           <audio ontimeupdate="console.log(Math.floor(this.currentTime) + ' / ' + Math.floor(this.duration))" src="./podcasts/Business/APPLE EVENT.m4a"></audio>
        </ul>
    </div>
-   <section class="podcasts">
+   <section class="podcasts" data-router-wrapper>
        
-       <!-- <div class="audio">
-           <h3 class="audio-title"></h3>
-           <img src="./images/stevejobs1.jpg" alt="">
-           <audio controls muted src=""></audio>
-
-       </div> -->
-      
-   </section>
+        <div class="audio">
+           
+           
+          
+        </div> 
+        
+    </section>
+    
+   
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.17/mediaelement.min.js" integrity="sha512-8lctz9uszTTvSLkYxscgIrq10xk/RR+nNKsgk+RuUcwknS5YxiV7l5TbLMJ/H/VPsOaD8lmOt/AByRX3ntZCOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdn.jsdelivr.net/npm/parcel@2.0.0-rc.0/lib/bin.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@dogstudio/highway@2.2.1/build/highway.min.js"></script>
    <script src="./js/app.js"></script>
+    <script>
+      
+    </script>
 </body>
 </html>
