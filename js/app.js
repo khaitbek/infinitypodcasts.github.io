@@ -9,72 +9,85 @@ let podcasts = [
     audio: "./podcasts/Interview/STEVEJOBSANDBILLGATES.mp3",
     title: "Steve Jobs and Bill Gates",
     category: "INTERVIEWS",
+    img:"./images/stevejobsandbillgates.jpg"
   },
   {
     id: 2,
     audio: "./podcasts/Interview/IASKEDBILLGATESWHAT'STHENEXTCRISIS..mp3",
     title: "Bill Gates talking about the next crisis",
     category: "INTERVIEWS",
+    img:"./images/bill_gates.jpg"
   },
   {
     id: 3,
     audio: "./podcasts/Interview/STEVEJOBS10MINUTESOFAMAZINGBUSINESSADVICE.m4a",
     title: "10 minutes of Amazing Business Advice from Steve Jobs",
     category: "INTERVIEWS",
+    img:"./images/stevejobs1.jpg"
   },
-  {
-    id: 3,
-    audio: "./podcasts/Interview/STEVEJOBS10MINUTESOFAMAZINGBUSINESSADVICE.m4a",
-    title: "10 minutes of Amazing Business Advice from Steve Jobs",
-    category: "INTERVIEWS",
-  },
+ 
   {
     id: 4,
     audio: "./podcasts/IELTS/IELTS SPEAKING - HOW TO INTRODUCE YOURSELF.mp3",
     title: "IELTS SPEAKING - How To Introduce Yourself",
     category: "IELTS",
+    img:"./images/ieltsspeaking1.jpg"
   },
   {
     id: 5,
     audio: "./podcasts/IELTS/IELTS SPEAKING BAND 9 CONVERSATION & TIPS.mp3",
     title: "IELTS SPEAKING BAND 9 TIPS",
     category: "IELTS",
+    img:"./images/ieltsband9.png"
   },
   {
     id: 6,
     audio: "./podcasts/IELTS/IELTS SPEAKING TEST BAND SCORE 9.0.mp3",
     title: "IELTS SPEAKING TEST BAND 9",
     category: "IELTS",
+    img:"./images/ielts1.jpeg"
   },
   {
     id: 7,
     audio: "./podcasts/IELTS/USEFUL IDIOMS FOR ANY TOPIC IN IELTS SPEAKING.mp3",
     title: "Useful idioms for any topic in IELTS speaking",
     category: "IELTS",
+    img:"./images/ieltsidioms.png"
   },
   {
     id: 8,
     audio: "./podcasts/Motivation/DEDICATION.mp3",
     title: "Dedication",
     category: "MOTIVATION",
+    img:"./images/dedication1.png"
   },
   {
     id: 9,
     audio: "./podcasts/Motivation/RESET YOUR MINDSET.mp3",
     title: "Reset your mindset",
     category: "MOTIVATION",
+    img:"./images/newmindset.jpg"
   },
   {
     id: 10,
     audio: "./podcasts/Motivation/WHAT DO ALL GREAT LEADERS HAVE IN COMMON.mp3",
     title: "What do all leaders have in common",
     category: "MOTIVATION",
+    img:"./images/leaders.jpg"
   },
   {
     id: 11,
     audio: "./podcasts/Motivation/YOU VS YOU.mp3",
     title: "You vs You",
     category: "MOTIVATION",
+    img:"./images/youvsyou.png"
+  },
+  {
+    id: 12,
+    audio: "./podcasts/Interview/BILLIONAIRES JACK MA VS ELON MUSK DEBATE.mp3",
+    title: "Jack Ma vs Elon Musk",
+    category: "INTERVIEWS",
+    img:"./images/jackmaelonmusk.jpg"
   },
 ];
 let interviews = [
@@ -83,54 +96,28 @@ let interviews = [
     audio: "./podcasts/Interview/STEVEJOBSANDBILLGATES.mp3",
     title: "Steve Jobs and Bill Gates",
     category: "INTERVIEWS",
+    img:"./images/stevejobsandbillgates.jpg"
   },
   {
     id: 2,
     audio: "./podcasts/Interview/IASKEDBILLGATESWHAT'STHENEXTCRISIS..mp3",
     title: "Bill Gates talking about the next crisis",
     category: "INTERVIEWS",
+    img:"./images/bill_gates.jpg"
   },
   {
     id: 3,
     audio: "./podcasts/Interview/STEVEJOBS10MINUTESOFAMAZINGBUSINESSADVICE.m4a",
     title: "10 minutes of Amazing Business Advice from Steve Jobs",
     category: "INTERVIEWS",
+    img:"./images/stevejobs1.jpg"
   },
   {
-    id: 1,
-    audio: "./podcasts/Interview/STEVEJOBSANDBILLGATES.mp3",
-    title: "Steve Jobs and Bill Gates",
+    id: 4,
+    audio: "./podcasts/Interview/BILLIONAIRES JACK MA VS ELON MUSK DEBATE.mp3",
+    title: "Jack Ma vs Elon Musk",
     category: "INTERVIEWS",
-  },
-  {
-    id: 2,
-    audio: "./podcasts/Interview/IASKEDBILLGATESWHAT'STHENEXTCRISIS..mp3",
-    title: "Bill Gates talking about the next crisis",
-    category: "INTERVIEWS",
-  },
-  {
-    id: 3,
-    audio: "./podcasts/Interview/STEVEJOBS10MINUTESOFAMAZINGBUSINESSADVICE.m4a",
-    title: "10 minutes of Amazing Business Advice from Steve Jobs",
-    category: "INTERVIEWS",
-  },
-  {
-    id: 1,
-    audio: "./podcasts/Interview/STEVEJOBSANDBILLGATES.mp3",
-    title: "Steve Jobs and Bill Gates",
-    category: "INTERVIEWS",
-  },
-  {
-    id: 2,
-    audio: "./podcasts/Interview/IASKEDBILLGATESWHAT'STHENEXTCRISIS..mp3",
-    title: "Bill Gates talking about the next crisis",
-    category: "INTERVIEWS",
-  },
-  {
-    id: 3,
-    audio: "./podcasts/Interview/STEVEJOBS10MINUTESOFAMAZINGBUSINESSADVICE.m4a",
-    title: "10 minutes of Amazing Business Advice from Steve Jobs",
-    category: "INTERVIEWS",
+    img:"./images/jackmaelonmusk.jpg"
   },
 ];
 let IELTS = [
@@ -139,80 +126,58 @@ let IELTS = [
     audio: "./podcasts/IELTS/IELTS SPEAKING - HOW TO INTRODUCE YOURSELF.mp3",
     title: "IELTS SPEAKING - How To Introduce Yourself",
     category: "IELTS",
+    img:"./images/ieltsspeaking1.jpg"
   },
   {
     id: 5,
     audio: "./podcasts/IELTS/IELTS SPEAKING BAND 9 CONVERSATION & TIPS.mp3",
     title: "IELTS SPEAKING BAND 9 TIPS",
     category: "IELTS",
+    img:"./images/ieltsband9.png"
   },
   {
     id: 6,
     audio: "./podcasts/IELTS/IELTS SPEAKING TEST BAND SCORE 9.0.mp3",
     title: "IELTS SPEAKING TEST BAND 9",
     category: "IELTS",
+    img:"./images/ielts1.jpeg"
   },
   {
     id: 7,
     audio: "./podcasts/IELTS/USEFUL IDIOMS FOR ANY TOPIC IN IELTS SPEAKING.mp3",
     title: "Useful idioms for any topic in IELTS speaking",
     category: "IELTS",
-  },
-  {
-    id: 8,
-    audio: "./podcasts/IELTS/USEFUL IDIOMS FOR ANY TOPIC IN IELTS SPEAKING.mp3",
-    title: "Useful idioms for any topic in IELTS speaking",
-    category: "IELTS",
-  },
-  {
-    id: 9,
-    audio: "./podcasts/IELTS/USEFUL IDIOMS FOR ANY TOPIC IN IELTS SPEAKING.mp3",
-    title: "Useful idioms for any topic in IELTS speaking",
-    category: "IELTS",
-  },
-  {
-    id: 10,
-    audio: "./podcasts/IELTS/USEFUL IDIOMS FOR ANY TOPIC IN IELTS SPEAKING.mp3",
-    title: "Useful idioms for any topic in IELTS speaking",
-    category: "IELTS",
+    img:"./images/ieltsidioms.png"
   },
 ];
 let motivation = [
+  {
+    id: 8,
+    audio: "./podcasts/Motivation/DEDICATION.mp3",
+    title: "Dedication",
+    category: "MOTIVATION",
+    img:"./images/dedication1.png"
+  },
   {
     id: 9,
     audio: "./podcasts/Motivation/RESET YOUR MINDSET.mp3",
     title: "Reset your mindset",
     category: "MOTIVATION",
+    img:"./images/newmindset.jpg"
   },
   {
     id: 10,
     audio: "./podcasts/Motivation/WHAT DO ALL GREAT LEADERS HAVE IN COMMON.mp3",
     title: "What do all leaders have in common",
     category: "MOTIVATION",
+    img:"./images/leaders.jpg"
   },
   {
     id: 11,
     audio: "./podcasts/Motivation/YOU VS YOU.mp3",
     title: "You vs You",
     category: "MOTIVATION",
-  },
-  {
-    id: 11,
-    audio: "./podcasts/Motivation/YOU VS YOU.mp3",
-    title: "You vs You",
-    category: "MOTIVATION",
-  },
-  {
-    id: 11,
-    audio: "./podcasts/Motivation/YOU VS YOU.mp3",
-    title: "You vs You",
-    category: "MOTIVATION",
-  },
-  {
-    id: 11,
-    audio: "./podcasts/Motivation/YOU VS YOU.mp3",
-    title: "You vs You",
-    category: "MOTIVATION",
+    img:"./images/youvsyou.png"
   },
 ];
 window.addEventListener("DOMContentLoaded", () => {
@@ -227,8 +192,8 @@ function displayAudios(audios) {
   let displayAudio = audios.map((item) => {
     return `<div class="audio">
         <audio  class="audio" src="${item.audio}"></audio>
-        <h3 class="audio-title">${item.title}</h3>
-        <img src="./images/stevejobs1.jpg" alt=""/>
+        
+        <img src="${item.img}" alt=""/>
         <div class="player">
     <div class="control">
   
@@ -248,19 +213,19 @@ function displayAudios(audios) {
             audio.play()
             audio.onplay = (e)=>{
                 let pause = document.querySelectorAll(".play-btn i");
-                console.log(pause)
-                console.log(e.parentElement)
+                
+               
                 this.classList.remove("fas","fa-play");
-                this.classList.add("fas","fa-stop");
-
+                this.classList.add("fas","fa-pause");
+             
                 let audios = document.getElementsByTagName("audio");
                 let strongs = parent.querySelector("strong");
                 let range = this.parentElement.parentElement.parentElement.lastElementChild.firstElementChild.firstElementChild;
-               console.log(range)
+               
                 
                   
                     range.max = audio.duration
-                
+                    
                 range.addEventListener("change",()=>{
                     audio.currentTime = range.value
                 })
@@ -268,6 +233,7 @@ function displayAudios(audios) {
                 for(let i = 0, len = audios.length;i < len;i++){
                     if(audios[i] != e.target){
                         audios[i].pause()
+                        
                         
                     }
                 }
@@ -281,7 +247,7 @@ function displayAudios(audios) {
     
     
                             
-                               
+
                                    let seconds = audio.currentTime % 60;
                                    let foo = audio.currentTime - seconds;
                                    let minutes = foo / 60;
@@ -302,14 +268,14 @@ function displayAudios(audios) {
                                    }
                                    let fixedCurrentTime = minutes + ":" + seconds;
                                    let ct = audio.currentTime;
-                                 
+                                   range.value = audio.currentTime 
                                   strongs.textContent = timeFormat(ct);
                                   let prog = Math.floor((ct * 100));
                                   progress.style.setProperty("--progress",prog + "%")
-                               
-                            
-                        }else{
-                           
+                                  
+                                }else{
+                                  
+                                  
                             
                         }
                     }
@@ -319,7 +285,7 @@ function displayAudios(audios) {
         }else{
             
             audio.pause()
-            this.classList.remove("fas","fa-stop");
+            this.classList.remove("far","fa-pause-circle");
             this.classList.add("fas","fa-play");
           
         }
@@ -335,7 +301,8 @@ function displayAudios(audios) {
         <input type="range" class="level" id="range"  value="0" min="0"/>
     </div>
     </div>
-</div>
+    </div>
+    <h3 class="audio-title">${item.title}</h3>
     </div>`;
   });
   displayAudio = displayAudio.join("");

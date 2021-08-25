@@ -44,6 +44,7 @@ body{
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     position: relative;
+    outline: none;
 }
 .sidebar .categories button:hover{
     background: #000;
@@ -87,13 +88,14 @@ body{
 }
 .audio{
   display: grid;
-  place-content: center;
+  /* place-content: center;
   place-items: center;
+  justify-items: center; */
   justify-items: center;
   row-gap: 5px;
   
   width: 80%;
-  height: 350px;
+  height: 380px;
   position: relative;
   background: #000;
   border-radius: 5%;
@@ -101,16 +103,24 @@ body{
 
 .audio h3{
   word-wrap: break-word;
-  width: 100%;
+  width: 80%;
   font-family: 'JetBrains Mono',monospace;
-  color: #fff;
-
+  color: green;
+    font-size: 16px;
   text-align: center;
 }
+.more{
+    color: #ea6f2e;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+   position: relative;
+   left: 50%;
+}
 .audio img{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+    height: 200px;
+    width: 90%;
     margin-top: 10px;
 }
 audio::-webkit-media-controls-volume-slider{
@@ -124,8 +134,9 @@ audio::-webkit-media-controls-volume-slider{
     display: grid;
 }
 .player{
-    background: #ea6f2e;
+    background: #fff;
     width: 250px;
+    height: 60px;
     align-items: center;
     margin-top: 15px;
     display: grid;
@@ -164,6 +175,7 @@ audio::-webkit-media-controls-volume-slider{
 }
 #current{
     text-align: right;
+    color: #000 !important;
 }
 
 .progress{
@@ -177,17 +189,17 @@ audio::-webkit-media-controls-volume-slider{
     width: 100px;
     -webkit-appearance: none;
     appearance: none;
-    background: #E1E6EC;
+    background: #aeb8c5;
     box-shadow: 2px 2px 5px #A2B1C6 , -2px -2px 11px  #fff  ;
     border-radius: 50px;
     margin: 12px 0;
 }
 .level::-webkit-slider-thumb{
     -webkit-appearance: none;
-    background-color: #A2B1C6;
+    background-color: #fff;
     box-shadow: 2px 2px 5px #A2B1C6 , -2px -2px 5px  #fff  ;
     width: 15px; /* Set a specific slider handle width */
-    height: 15px; /* Slider handle height */
+    height: 16px; /* Slider handle height */
     border-radius: 90px;
 }
 .level::-moz-range-thumb{
@@ -217,6 +229,9 @@ audio::-webkit-media-controls-volume-slider{
     }
     .podcasts{
         grid-template-columns: 1fr;
+    }
+    .more{
+        left: 0 !important;
     }
 }
 @media screen and (max-width:568px){
