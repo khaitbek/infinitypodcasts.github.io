@@ -11,6 +11,7 @@
 body{
     font-family: 'Poppins',sans-serif;
    scroll-behavior: smooth;
+   
 }
 body::-webkit-scrollbar{
     width: 1em;
@@ -51,7 +52,7 @@ body::-webkit-scrollbar-corner{
 .sidebar .categories{
     display: grid;
     
-    row-gap: 2rem;
+    row-gap: 0.2rem;
     position: relative;
     grid-template-columns: 1fr;
     column-gap: 1rem;
@@ -60,17 +61,18 @@ body::-webkit-scrollbar-corner{
     padding: 10px 15px;
     font-size: 20px;
     word-wrap: break-word;
-    background: #fff;
+    background: transparent;
     border: none;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
     position: relative;
     outline: none;
+    color: #fff;
 }
 .sidebar .categories button:hover{
     background: #000;
-    color: #fff;
-    border: 2px solid #fff;
+    opacity: 0.5;
+   
 }
 
 .sidebar .social{
@@ -299,15 +301,41 @@ audio::-webkit-media-controls-volume-slider{
     transform: translateY(100%);
 }
 .playlist{
-   position: fixed;
-    background: #ea6f2e;
-    margin-left: auto;
-    width: 50%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
     transition: all 1s ease-in-out;
- 
+    height: 100vh;
+   display: none;
+}
+.playlist-btn{
+    padding: 10px 15px;
+    font-size: 20px;
+    word-wrap: break-word;
+    background: green;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    outline: none;
+    color: #fff;
+    margin-top: 25px;
+    text-transform: uppercase;
 }
 .open-playlist{
    
+   display: grid;
+}
+.heart-btn{
+   
+    background: none;
+    border: none;
+    outline: none;
+}
+.download-link{
+    color: #888;
 }
 @media screen and (max-width:860px){
     .sidebar{
