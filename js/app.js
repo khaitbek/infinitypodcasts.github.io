@@ -483,6 +483,59 @@ function displayAudios(audios) {
                         
                         
                     }
+                    audios[i].onended = ()=>{
+                      let target_icon = audios[i].parentElement.querySelector("i");
+                      target_icon.classList.remove("fas","fa-pause");
+                      target_icon.classList.add("fas","fa-play");
+                      let range_el = audios[i + 1].parentElement.querySelector("#range");
+                      console.log(range_el)
+                      let current_el = audios[i + 1].parentElement.querySelector("#current");
+                      let current = audios[i + 1].parentElement.querySelector("#range");
+                      let icon_el = audios[i + 1].parentElement.querySelector("i");
+                      icon_el.classList.remove("fas","fa-play");
+                      icon_el.classList.add("fas","fa-pause");
+                      let duration_el = audios[i + 1].parentElement.querySelector("#duration");
+                      let seconds = Math.floor(audios[i + 1].duration % 60).toFixed(0);
+                      let foo = audios[i + 1].duration - seconds;
+                      let minutes = Math.floor((foo / 60)).toFixed(0);
+                      duration_el.textContent = minutes + ":" + seconds
+                      if(minutes > "59:59"){
+                        minutes = 1
+                        duration_el.textContent = minutes + ":" + seconds + ":00"
+                      }
+                     range_el.max = audios[i + 1].duration;
+                     range_el.addEventListener("change",()=>{
+                       audios[i + 1].currentTime = range_el.value;
+                     })
+                      audios[i].pause();
+                      audios[i + 1].play();
+                      audios[i + 1].ontimeupdate = ()=>{
+                       
+                        let seconds = audios[i + 1].currentTime % 60;
+                        let foo = audios[i + 1].currentTime - seconds;
+                        let minutes = foo / 60;
+                        if(seconds < 10){
+                            seconds =Math.floor( "0" + (seconds.toFixed(0).toString()));
+                        }
+                        else{
+                         seconds = Math.floor( (seconds.toFixed(0).toString()));
+                        }
+                        function timeFormat(ct){
+                           seconds = (Math.floor(ct % 60))
+                            minutes =(Math.floor(ct / 60))
+  
+                            if (seconds < 10){
+                                seconds = "0"+seconds
+                            }
+                            return minutes + ":" + seconds 
+                        }
+                        let fixedCurrentTime = minutes + ":" + seconds;
+                        let ct = audios[i + 1].currentTime;
+                        range_el.value = audios[i + 1].currentTime 
+                       current_el.textContent = timeFormat(ct);
+                      }
+                    }
+                   
                   }
                 audio.onpause = ()=>{
                   this.classList.remove("fas","fa-stop");
@@ -589,6 +642,12 @@ function displayAudios(audios) {
      })
     })
   })
+  let audio_element = section.querySelectorAll("audio");
+  for(let i = 0,len = audio_element.length;i < len;i++){
+    if(audio_element[i].ended){
+      audio_element[i + 1].play();
+    }
+  }
     let icon = section.querySelectorAll("i.far");
     icon.forEach((icon)=>{
       icon.addEventListener("click",()=>{
